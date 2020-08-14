@@ -17,20 +17,17 @@ class AddGood extends React.Component{
         this.setState({
             name:event.target.value
         })
-        console.log(this.state.name);
     }
     onhandlePriceChange=event=>{
         this.setState({
             price:event.target.value,
-            error:isPriceValid(event.target.vale)
+            error:isPriceValid(event.target.value)
         })
-        console.log(this.state.name);
     }
     onhandleUnitChange=event=>{
         this.setState({
             unit:event.target.value
         })
-        console.log(this.state.name);
     }
     onhandleimgUrlChange=event=>{
         this.setState({
@@ -53,7 +50,7 @@ class AddGood extends React.Component{
                     <input value={this.state.unit} type="text" onChange={this.onhandleUnitChange}/>
                     <p>图片</p>
                     <input value={this.state.imgUrl} type="text" onChange={this.onhandleimgUrlChange}/>
-                    <button disabled={!this.state.name||!this.state.price||!this.state.unit||this.state.imgUrl||!this.state.error}>提交</button>
+                    <button disabled={!this.state.name||!this.state.price||!this.state.unit||!this.state.imgUrl||!this.state.error}>提交</button>
                 </form>
             </div>
         )
