@@ -1,68 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tasking
 
-## Available Scripts
+Task 1:
+完成商城页面展示商品列表，从数据库获取商品数据
 
-In the project directory, you can run:
+Task 2:
+完成添加商品按钮，将商品添加到订单列表，并将数据传入数据库中，添加请求还未返回时，添加按钮不可点击，添加成功后，可继续添加商品
 
-### `npm start`
+Task 3:
+完成订单页面，从数据库中获取订单列表
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Task 4：
+无订单时，即数据库中订单表为空时，显示"暂无订单，返回商城页面继续购买"
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Task 5:
+完成订单删除功能，点击删除按钮，删除该订单，且将该订单信息从数据库中删除，如果删除失败，则提示"订单删除失败，稍后再试"
 
-### `npm test`
+Task 6:
+完成添加商品页面，输入商品名称、价格、商品单位以及商品图片链接，同时对输入框进行验证，用于添加新的商品，同时将商品信息传入数据库，商城页面也会显示该商品
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Task 7:
+将商品名称与数据库中商品名称进行比较，如果商品名称已经存在，点击“提交”后，提示"商品名称已经存在，请输入新的商品名称"
