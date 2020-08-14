@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route, BrowserRouter, Switch, Link} from "react-router-dom";
+import AddGood from './AddGood/AddGood';
+import Mall from './Mall/Mall';
+import Order from './Order/Order'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+class App extends React.Component{
+  render() {
+    return (
+      <BrowserRouter>
+      <div className="navigation">
+        <ul className="nav">
+          <li>
+          <Link to='/' className="link">商城</Link>
+          </li>
+          <li>
+          <Link to='/order' className="link">订单</Link>
+          </li>
+          <li className="link">
+            <Link to='/add-good' className="link">添加商品</Link>
+          </li>
+        </ul>
+      </div>
+        <Switch>
+          <Route exact path='/' component={Mall}/>
+          <Route exact path='/calculator' component={Order}/>
+          <Route exact path='/countdown' component={AddGood}/>
+        </Switch>
+      </BrowserRouter>
   );
+}
 }
 
 export default App;
