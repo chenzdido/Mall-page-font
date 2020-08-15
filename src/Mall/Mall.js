@@ -7,19 +7,21 @@ class Mall extends React.Component{
             goods:[]
         }
     }
-    /*componentDidMount(){
+    componentDidMount(){
         fetch('http://localhost:8081/buy/list')
         .then((response)=>response.json())
         .then((data)=>{
+            console.log(data);
             this.setState({
-                goods:data,
-            });
+                goods:data
+            })
         })
         .then(console.log(this.state.goods));
-    }*/
+    }
     render(){
         return(
             <div>
+
             </div>
         )
     }
